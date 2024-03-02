@@ -1,0 +1,39 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="text-3xl font-bold mb-4 text-center">Welcome to PDFtoolKit</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="feature-card rounded-lg overflow-hidden shadow-md hover:shadow-lg bg-white">
+            <h2 class="text-xl font-semibold mb-2 text-blue-600">QR-Generator</h2>
+            <a href="https://qrweb-4j3t.onrender.com/" target="_blank">
+                <img src="{{ url_for('static', filename='feature1.png') }}" alt="Feature 1" class="w-full rounded-t-lg">
+            </a>
+            <p class="p-4">It allows you to generate QR codes for provided text data</p>
+        </div>
+        <div class="feature-card rounded-lg overflow-hidden shadow-md hover:shadow-lg bg-white">
+            <h2 class="text-xl font-semibold mb-2 text-green-600">PDF to Word Converter</h2>
+            <a href="" target="_blank">
+                <img src="{{ url_for('static', filename='feature2.png') }}" alt="Feature 2" class="w-full rounded-t-lg">
+            </a>
+            <p class="p-4">Convert PDF files to Word documents effortlessly</p>
+        </div>
+        <!-- Add more cards as needed -->
+
+        <div class="feature-card rounded-lg overflow-hidden shadow-md hover:shadow-lg bg-white">
+            <h2 class="text-xl font-semibold mb-2 text-purple-600">SecurePDF</h2>
+            <a href="https://securepdf.onrender.com/" target="_blank">
+                <img src="{{ url_for('static', filename='feature3.png') }}" alt="Feature 2" class="w-full rounded-t-lg">
+            </a>
+            <p class="p-4">Upload PDF files and encrypt them using a password provided via a form</p>
+        </div>
+
+        <div class="feature-card rounded-lg overflow-hidden shadow-md hover:shadow-lg bg-white">
+            <h2 class="text-xl font-semibold mb-2 text-orange-600">SecurePDF</h2>
+            <a href="" target="_blank">
+                <img src="{{ url_for('static', filename='feature4.png') }}" alt="Feature 4" class="w-full rounded-t-lg">
+            </a>
+            <p class="p-4">Coming Soon</p>
+        </div>
+    </div>
+{% endblock %}

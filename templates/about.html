@@ -1,0 +1,19 @@
+<!-- about.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="text-3xl font-bold mb-4">About Developer</h1>
+    <div class="bg-white rounded-lg shadow-md p-6 transition duration-500 ease-in-out transform hover:scale-105">
+        <img src="{{ url_for('static', filename='profilephoto.png') }}" alt="Profile Photo" class="w-24 h-24 rounded-full mb-4">
+        <p class="text-lg font-semibold mb-2">Name: Adarsh Mishra</p>
+        <p class="text-blue-500 hover:underline mb-2">
+            Profile Page: <a href="https://portfolio-ocu4.onrender.com/" target="_blank">Portfolio</a>
+        </p>
+        <p class="text-blue-500 hover:underline mb-2">
+            LinkedIn: <a href="https://www.linkedin.com/in/adarshmishra26" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p class="text-blue-500 hover:underline mb-2">
+            GitHub: <a href="https://github.com/adarshmishra26" target="_blank">GitHub Profile</a>
+        </p>
+    </div>
+{% endblock %}
